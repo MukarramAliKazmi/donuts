@@ -1,9 +1,9 @@
-export function menuPage() {
+export function aboutPage() {
   const el     = document.createElement("div");
-  el.className = "menu-page";
+  el.className = "about-page";
 
   el.innerHTML = `
-    <h1>Menu Page</h1>
+    <h1>About Page</h1>
   `;
 
   return el;

@@ -1,7 +1,9 @@
-import { mainLayout } from "../layouts/main.js";
+import { mainLayout }  from "../layouts/main.js";
 
-import { homePage }   from "../pages/home.js";
-import { menuPage }   from "../pages/menu.js";
+import { homePage }    from "../pages/home.js";
+import { menuPage }    from "../pages/menu.js";
+import { aboutPage }   from "../pages/about.js";
+import { contactPage } from "../pages/contact.js"
 
 let currentLayout;
 
@@ -18,6 +20,16 @@ function router() {
       layout      = mainLayout();
       layout.type = "main";
       page        = menuPage();
+      break;
+    case "#/about":
+      layout      = mainLayout();
+      layout.type = "main";
+      page        = aboutPage();
+      break;
+    case "#/contact":
+      layout      = mainLayout();
+      layout.type = "main";
+      page        = contactPage();
       break;
     default:
       window.location.hash = "#/";

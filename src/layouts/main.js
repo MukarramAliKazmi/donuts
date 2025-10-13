@@ -1,30 +1,15 @@
-import { router } from "../lib/router.js";
+import { header } from "../components/header.js";
 
 export function mainLayout() {
-  const el = document.createElement("div");
-  el.className = "main-layout";
+  const el          = document.createElement("div");
+  el.className      = "main-layout";
 
-  el.innerHTML = `
-    <header>
-      <nav>
-        <button data-path="#/">
-          Home
-        </button>
-        <button data-path="#/menu">
-          Menu
-        </button>
-      </nav>
-    </header>
-    <div class="content"></div>
-  `;
+  const content     = document.createElement("div");
+  content.className = "content";
+ 
+  el.appendChild(header());
+  el.appendChild(content);
 
-  el.querySelectorAll("button").forEach(button => {
-    button.addEventListener("click", () => {
-      const path = button.dataset.path;
-      window.location.hash = path;
-    });
-  });
-
-  return el;
+ return el;
 }
 

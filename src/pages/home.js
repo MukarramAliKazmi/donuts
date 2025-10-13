@@ -1,5 +1,5 @@
 export function homePage() {
-  const el = document.createElement("div");
+  const el     = document.createElement("div");
   el.className = "home-page";
 
   el.innerHTML = `
