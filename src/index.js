@@ -1,4 +1,5 @@
 import "./styles/global.css";
+import { initRouter } from "./lib/router.js";
 
-console.log("I love donuts.");
+initRouter();
 
