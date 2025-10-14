@@ -1,18 +1,35 @@
 @font-face {
-  font-family: "Moo Lah Lah";
-  src: url("../assets/fonts/MooLahLah-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
+  font-family                         : "Moo Lah Lah";
+  src                                 : url("../assets/fonts/MooLahLah-Regular.woff2") format("woff2");
+  font-weight                         : 400;
+  font-style                          : normal;
 }
 
 @font-face {
-  font-family: "Sour Gummy";
-  src: url("../assets/fonts/SourGummy-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
+  font-family                         : "Sour Gummy";
+  src                                 : url("../assets/fonts/SourGummy-Regular.woff2") format("woff2");
+  font-weight                         : 400;
+  font-style                          : normal;
 }
 
-body {
-  background-color: rebeccapurple;
+* {
+  margin                              : 0;
+  font-family                         : "Sour Gummy", sans-serif;
+  font-weight                         : 400;
+  font-style                          : normal;
+}
+
+:root {
+  font-size                           : clamp(0.8rem, 1.25vw, 100rem);
+
+  --primary                           : #f6339a;
+  --dark                              : #510424;
+}
+
+.font-donuts {
+  font-family                         : "Moo Lah Lah", sans-serif;
+  font-weight                         : 400;
+  font-style                          : normal;
+  color                               : var(--primary);
 }
 
