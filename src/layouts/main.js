@@ -1,15 +1,18 @@
+import "../styles/layouts/main.css";
+
 import { header } from "../components/header.js";
 
 export function mainLayout() {
-  const el          = document.createElement("div");
-  el.className      = "main-layout";
+  const el     = document.createElement("div");
+  el.className = "main-layout";
 
-  const content     = document.createElement("div");
-  content.className = "content";
- 
-  el.appendChild(header());
-  el.appendChild(content);
+  el.innerHTML = `
+    <div class="header-slot"></div>
+    <div class="content"></div>
+  `;
 
- return el;
+  el.querySelector(".header-slot").replaceWith(header());
+
+  return el;
 }
 
