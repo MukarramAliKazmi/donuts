@@ -1,0 +1,38 @@
+.header {
+  display                             : flex;
+  justify-content                     : space-between;
+  padding                             : 1rem;
+}
+
+.logo {
+  font-size                           : 1.5rem;
+  color                               : var(--dark);
+}
+
+.nav {
+  display                             : flex;
+  gap                                 : 1rem;
+}
+
+.nav-item {
+  background-color                    : transparent;
+  border                              : none;
+  font-size                           : 1rem;
+  color                               : var(--dark);
+  padding                             : 0;
+}
+
+.nav-item-selected {
+  color                               : var(--primary);
+}
+
+@media only screen and (min-width: 40rem) {
+  .header {
+    padding                           : 1.5rem;
+  }
+
+  .nav {
+    gap                               : 1.5rem;
+  }
+}
+
