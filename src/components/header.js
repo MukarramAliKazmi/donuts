@@ -1,31 +1,61 @@
-export function header() {
-  const el     = document.createElement("header");
-  el.className = "header";
+import "../styles/components/header.css";
 
-  el.innerHTML = `
+export function header() {
+  const helpers = headerHelpers();
+
+  const el      = document.createElement("header");
+  el.className  = "header";
+
+  el.innerHTML  = `
+    <div class="logo">
+      D<span class="font-donuts">O</span>NUTS
+    </div>
     <nav class="nav">
-      <button class="nav-item" data-path="#/">
+      <button class='${helpers.getItemClass("#/")}' data-path="#/">
         Home
       </button>
-      <button class="nav-item" data-path="#/menu">
+      <button class='${helpers.getItemClass("#/menu")}' data-path="#/menu">
         Menu
       </button>
-      <button class="nav-item" data-path="#/about">
+      <button class='${helpers.getItemClass("#/about")}' data-path="#/about">
         About
       </button>
-      <button class="nav-item" data-path="#/contact">
+      <button class='${helpers.getItemClass("#/contact")}' data-path="#/contact">
         Contact
       </button>
     </nav>
   `;
-
-  el.querySelectorAll(".nav-item").forEach(button => {
-    button.addEventListener("click", () => {
-      const path = button.dataset.path;
-      window.location.hash = path;
-    });
-  });
+ 
+  headerEvents(el);
 
   return el;
+}
+
+function headerHelpers() {
+  const getItemClass = (path) => {
+    const hash = window.location.hash;
+    return `nav-item ${hash === path ? "nav-item-selected" : ""}`;
+  };
+
+  return {
+    getItemClass
+  };
+}
+
+function headerEvents(el) {
+  const helpers = headerHelpers();
+
+  el.addEventListener("click", (e) => {
+    if (e.target.matches(".nav-item")) {
+      window.location.hash = e.target.dataset.path;
+    }
+  });
+
+  window.addEventListener("hashchange", () => {
+    el.querySelectorAll(".nav-item").forEach(button => {
+      const path = button.dataset.path;
+      button.className = helpers.getItemClass(path);
+    });
+  });
 }
 
