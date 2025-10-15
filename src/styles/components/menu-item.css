@@ -1,0 +1,18 @@
+.menu-item-image-container {
+  margin-bottom                       : 1rem;
+}
+
+.menu-item-image {
+  width                               : 100%;
+  max-width                           : 20rem;
+}
+
+.menu-item-name {
+  font-size                           : 1.5rem;
+}
+
+.menu-item-price {
+  font-size                           : 1.5rem;
+  color                               : var(--primary-500);
+}
+
