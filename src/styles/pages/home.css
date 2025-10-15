@@ -1,0 +1,113 @@
+.home-page {
+  display                             : grid;
+  grid-template-columns               : 1fr;
+  gap                                 : 4rem;
+}
+
+.home-heading {
+  font-size                           : 3rem;
+  margin-bottom                       : 2rem;
+}
+
+.home-heading-logo {
+  width                               : 1.88rem;
+}
+
+.home-actions {
+  display                             : flex;
+  align-items                         : center;
+  gap                                 : 2rem;
+  margin-bottom                       : 2.67rem;
+}
+
+.home-action-button {
+  background-color                    : var(--primary-500);
+  border                              : none;
+  border-radius                       : 0.5rem;
+  color                               : white;
+  font-size                           : 1.5rem;
+  padding                             : 1rem 3rem;
+  cursor                              : pointer;
+}
+
+.home-price-tag {
+  color                               : var(--primary-500);
+  font-size                           : 1.5rem;
+}
+
+.home-action-button:hover {
+  background-color                    : var(--primary-600);
+}
+
+.home-action-button:active {
+  background-color                    : var(--primary-700);
+}
+
+.home-menu-items {
+  display                             : grid;
+  grid-template-columns               : 1fr;
+  gap                                 : 2rem;
+  justify-items                       : center;
+}
+
+.home-visit-menu-button-container {
+  display                             : flex;
+  align-items                         : end;
+}
+
+.home-visit-menu-button {
+  background-color                    : transparent;
+  color                               : var(--primary-500);
+  padding                             : 0;
+  border                              : none;
+  cursor                              : pointer;
+  font-size                           : 1.5rem;
+  display                             : flex;
+  gap                                 : 0.5rem;
+  align-items                         : center;
+  border-bottom                       : 0.1rem solid var(--primary-500);
+  margin-top                          : 2rem;
+}
+
+.home-visit-menu-button:hover {
+  color                               : var(--primary-600);
+}
+
+.home-visit-menu-button:active {
+  color                               : var(--primary-700);
+}
+
+.home-image {
+  width                               : 100%;
+  object-fit                          : object-contain;
+  display                             : none;
+}
+
+@media only screen and (min-width: 64rem) {
+  .home-page {
+    grid-template-columns             : 1fr 1fr;
+  }
+
+  .home-image {
+    display                           : block;
+  }
+}
+
+@media only screen and (min-width: 40rem) {
+  .home-heading {
+    font-size                         : 4rem;
+  }
+
+  .home-heading-logo {
+    width                             : 3rem;
+  }
+
+  .home-action-button {
+    padding                           : 1rem 3rem;
+  }
+
+  .home-menu-items {
+    grid-template-columns             : 1fr 1fr 1fr;
+    justify-items                     : start;
+  }
+}
