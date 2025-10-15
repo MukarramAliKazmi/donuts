@@ -28,6 +28,10 @@ module.exports = {
         test: /\.woff2$/i,
         type: "asset/resource",
       },
+      {
+        test: /\.(webp|svg)$/i,
+        type: "asset/resource",
+      },
     ],
   },
 };

@@ -6,7 +6,10 @@
 
 .logo {
   font-size                           : 1.5rem;
-  color                               : var(--dark);
+}
+
+.logo-image {
+  width                               : 1.125rem;
 }
 
 .nav {
@@ -18,7 +21,6 @@
   background-color                    : transparent;
   border                              : none;
   font-size                           : 1rem;
-  color                               : var(--dark);
   padding                             : 0;
 }
 

@@ -1,5 +1,7 @@
 import "../styles/components/header.css";
 
+import logo from "../assets/logos/logo.svg";
+
 export function header() {
   const helpers = headerHelpers();
 
@@ -8,7 +10,9 @@ export function header() {
 
   el.innerHTML  = `
     <div class="logo">
-      D<span class="font-donuts">O</span>NUTS
+      <span class="nowrap">
+        D<img class="logo-image" src="${logo}" alt="O">O</img>NUTS
+      <span>
     </div>
     <nav class="nav">
       <button class='${helpers.getItemClass("#/")}' data-path="#/">
