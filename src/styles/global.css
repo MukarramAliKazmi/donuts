@@ -44,3 +44,22 @@
   white-space                         : nowrap;
 }
 
+.page-heading {
+  font-size                           : 3rem;
+  margin-bottom                       : 2rem;
+}
+
+.page-heading-logo {
+  width                               : 1.88rem;
+}
+
+@media only screen and (min-width: 40rem) {
+  .page-heading {
+    font-size                         : 4rem;
+  }
+
+  .page-heading-logo {
+    width                             : 3rem;
+  }
+}
+

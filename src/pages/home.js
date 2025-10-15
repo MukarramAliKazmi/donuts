@@ -13,15 +13,15 @@ export function homePage() {
 
   el.innerHTML = `
     <div class="home-content">
-      <h1 class="home-heading">
+      <h1 class="page-heading">
         THE BEST
         <span class="nowrap">
-          D<img class="home-heading-logo" src="${logo}" alt="O" />NUT
+          D<img class="page-heading-logo" src="${logo}" alt="O" />NUT
         </span>
         <br/>
         IN
         <span class="nowrap">
-          T<img class="home-heading-logo" src="${logo}" alt="O" />WN
+          T<img class="page-heading-logo" src="${logo}" alt="O" />WN
         </span>
       </h1>
       <div class="home-actions">
