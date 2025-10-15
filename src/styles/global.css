@@ -10,14 +10,23 @@
   font-family                         : "Fredoka", sans-serif;
   font-weight                         : 500;
   font-style                          : normal;
-  color                               : var(--dark);
+  color                               : var(--primary-950);
 }
 
 :root {
   font-size                           : clamp(0.8rem, 1.25vw, 100rem);
 
-  --primary                           : #f6339a;
-  --dark                              : #510424;
+  --primary-50                        : #fdf2f8;
+  --primary-100                       : #fce7f3;
+  --primary-200                       : #fccee8;
+  --primary-300                       : #fda5d5;
+  --primary-400                       : #fb64b6;
+  --primary-500                       : #f6339a;
+  --primary-600                       : #e60076;
+  --primary-700                       : #c6005c;
+  --primary-800                       : #a3004c;
+  --primary-900                       : #861043;
+  --primary-950                       : #510424;
 }
 
 .body-loading {
