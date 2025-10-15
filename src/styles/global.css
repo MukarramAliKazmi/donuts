@@ -20,6 +20,17 @@
   --dark                              : #510424;
 }
 
+.body-loading {
+  filter                              : blur(0.5rem);
+  pointer-events                      : none;
+}
+
+.body-loaded {
+  filter                              : none;
+  opacity                             : 1;
+  transition                          : filter 0.5s ease;
+}
+
 .nowrap {
   white-space                         : nowrap;
 }
