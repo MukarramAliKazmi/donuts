@@ -36,9 +36,8 @@
 
 .home-menu-items {
   display                             : grid;
-  grid-template-columns               : 1fr;
+  grid-template-columns               : 1fr 1fr;
   gap                                 : 2rem;
-  justify-items                       : center;
 }
 
 .home-visit-menu-button-container {
@@ -74,16 +73,6 @@
   display                             : none;
 }
 
-@media only screen and (min-width: 64rem) {
-  .home-page {
-    grid-template-columns             : 1fr 1fr;
-  }
-
-  .home-image {
-    display                           : block;
-  }
-}
-
 @media only screen and (min-width: 40rem) {
   .home-action-button {
     padding                           : 1rem 3rem;
@@ -91,7 +80,16 @@
 
   .home-menu-items {
     grid-template-columns             : 1fr 1fr 1fr;
-    justify-items                     : start;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  .home-page {
+    grid-template-columns             : 1fr 1fr;
+  }
+
+  .home-image {
+    display                           : block;
   }
 }
 
