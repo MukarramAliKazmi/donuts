@@ -47,6 +47,14 @@
   transition                          : filter 0.5s ease;
 }
 
+.logo {
+  font-size                           : 1.5rem;
+}
+
+.logo-image {
+  width                               : 1.125rem;
+}
+
 .text-primary {
   color                               : var(--primary-500);
 }
@@ -61,7 +69,7 @@
 }
 
 .page-heading-logo {
-  width                               : 1.88rem;
+  width                               : 2.25rem;
 }
 
 .page-subheading {
