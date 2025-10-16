@@ -1,0 +1,19 @@
+.menu-page-menu-grid {
+  display                             : grid;
+  grid-template-columns               : 1fr 1fr;
+  gap                                 : 2rem;
+  margin-bottom                       : 3rem;
+}
+
+@media only screen and (min-width: 40rem) {
+  .menu-page-menu-grid {
+    grid-template-columns             : 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  .menu-page-menu-grid {
+    grid-template-columns             : 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
