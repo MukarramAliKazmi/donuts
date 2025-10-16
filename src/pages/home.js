@@ -1,11 +1,11 @@
 import "../styles/pages/home.css";
 
-import donutsImage            from "../assets/images/home/donuts-image.webp";
-import logo                   from "../assets/logos/logo.svg";
-import singleChocolateDonut   from "../assets/images/menu/single-chocolate.webp";
-import singleDarkBlueDonut    from "../assets/images/menu/single-dark-blue.webp";
+import donutsImage      from "../assets/images/home/donuts-image.webp";
+import logo             from "../assets/logos/logo.svg";
+import cocoaCrushDonut  from "../assets/images/menu/best-sellers/cocoa-crush.webp";
+import oceanFrostDonut  from "../assets/images/menu/best-sellers/ocean-frost.webp";
 
-import { menuItem }           from "../components/menu-item.js";
+import { menuItem }     from "../components/menu-item.js";
 
 export function homePage() {
   const el     = document.createElement("div");
@@ -46,10 +46,10 @@ export function homePage() {
   `;
 
   el.querySelector(".menu-item-1-slot").replaceWith(
-    menuItem(singleChocolateDonut, "Cocoa Crush", "$2.99")
+    menuItem(cocoaCrushDonut, "Cocoa Crush", "$2.99")
   );
   el.querySelector(".menu-item-2-slot").replaceWith(
-    menuItem(singleDarkBlueDonut, "Ocean Frost", "$2.99")
+    menuItem(oceanFrostDonut, "Ocean Frost", "$2.99")
   );
 
   homeEvents(el);
