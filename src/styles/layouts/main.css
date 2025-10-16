@@ -1,10 +1,27 @@
-.content {
-  padding                             : 1rem;
+.main-layout {
+  height                              : 100vh;
+  overflow-y                          : scroll;
+  display                             : flex;
+  flex-direction                      : column;
+}
+
+.main-layout .content {
+  flex-grow                           : 1;
+  padding                             : 6rem 1rem 1rem 1rem;
+  display                             : flex;
+}
+
+.main-layout .header-container {
+  position                            : fixed;
+  left                                : 0;
+  right                               : 0;
+  background                          : rgba(255, 255, 255, 0.5);
+  backdrop-filter                     : blur(0.5rem);
 }
 
 @media only screen and (min-width: 40rem) {
-  .content {
-    padding                           : 1.5rem;
+  .main-layout .content {
+    padding                           : 6rem 1.5rem 1.5rem 1.5rem;
   }
 }
 
