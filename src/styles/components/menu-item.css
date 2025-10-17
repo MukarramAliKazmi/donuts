@@ -1,8 +1,14 @@
+.menu-item {
+  display                             : flex;
+  flex-direction                      : column;
+}
+
 .menu-item-image-container {
   display                             : flex;
   align-items                         : center;
   justify-content                     : center;
   margin-bottom                       : 1.5rem;
+  flex-grow                           : 1;
 }
 
 .menu-item-image {
